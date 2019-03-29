@@ -3,8 +3,6 @@ import requests
 import time
 import urllib
 from pprint import pprint
-import config
-
 
 TOKEN = "637785666:AAHRW-gz-CeKkSGbP_xKubcau0dO28ffBYc"
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
