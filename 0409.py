@@ -49,7 +49,7 @@ def html_query():
 		if(docu_solo < 10):
 			file_write(html_solo)
 			
-		print len(docu_solo)
+		print(len(docu_solo))
 		for msg in docu_solo:
 			msg_time = re.findall(res_time, msg[1], re.I|re.S|re.M)
 			docu_all.append((len(docu_all)+1, msg[0], len(msg_time)))
