@@ -10,7 +10,7 @@ url = 'http://neris.csrc.gov.cn/alappl/home/volunteerLift.do'
 # res = r'<.*?titleshow.*?>(.*?)<.*?>'
 res_title = r'<div\s{1}class=\"center_right_mian1_content\".*?titleshow.*?>(.*?)<.*?title=(.*?)<\/table>'
 res_time = r'\d{4}-\d{2}-\d{2}'
-res_hanzi = ur'[\u4e00-\u9fa5]{4,7}'
+# res_hanzi = ur'[\u4e00-\u9fa5]{4,7}'
 conn = sqlite3.connect('csrc.db')
 cursor = conn.cursor()
 sql_create = '''CREATE TABLE documents (
