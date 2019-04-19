@@ -46,7 +46,7 @@ def html_query():
 			print(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())), "404 Not Found.")
 			
 		docu_solo = re.findall(res_title, html_solo, re.I|re.S|re.M)
-		if(docu_solo < 10):
+		if(len(docu_solo) < 10):
 			file_write(html_solo)
 			
 		print(len(docu_solo))
